@@ -8,7 +8,7 @@ dotenv.config();
 //yha p hmne limit set krdi aur baki cheeze import krdi .
 const ratelimit =new Ratelimit({
     redis:Redis.fromEnv(),
-    limiter:Ratelimit.slidingWindow(10,"20 s"),
+    limiter:Ratelimit.slidingWindow(100,"60 s"),
     
     });
 
