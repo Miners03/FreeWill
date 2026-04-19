@@ -2,5 +2,5 @@
 @import "tailwindcss";
 @plugin "daisyui" 
 {
-    themes: acid,light, dark, forest, night, retro, cupcake, dracula, synthwave, aqua, corporate, halloween, garden, black, luxury;
+    themes: acid,light, dark, forest, night, retro, cupcake, dracula, synthwave, aqua, corporate, halloween, garden, black, luxury,bussiness;
 };

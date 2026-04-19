@@ -50,14 +50,16 @@ const CreatePage = () => {
     <div className="min-h-screen bg-base-350">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto">
-          <Link to={"/"} className="btn btn-ghost mb-6">
+          <Link to={"/"} className="btn btn-ghost text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all duration-200 mb-6">
+          {/* className="btn btn-ghost hover:bg-blue-400 mb-6"> */}
             <ArrowLeftIcon className="size-5" />
             Back to Notes
           </Link>
 
           <div className="card bg-base-100 h-120 ">
             <div className="card-body">
-              <h2 className="card-title text-2xl mb-4">Create New Note</h2>
+              <h2 className="card-title text-2xl mb-4  ">
+Start Capturing Thoughts..</h2>
               <form onSubmit={handleSubmit}>
                 <div className="form-control mb-8 my-8">
                   <label className="label ml-22" >
@@ -90,12 +92,22 @@ const CreatePage = () => {
                 <div className="card-actions justify-end">
                   <button
                     type="submit"
-                    className="btn btn-primary"
+                    // className="btn btn-primary text-white font-medium"
+                    className="btn btn-outline text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all duration-200 mb-6"
                     disabled={loading}
                   >
                     {loading ? "Creating..." : "Create Note"}
                   </button>
                 </div>
+                {/* <h2 className="text-lg md:text-xl text-gray-300 text-center mx-auto  max-w-md leading-relaxed">
+  "Write ideas, tasks, or anything you don’t want to forget"
+</h2>  */}
+{/* <h2 className="text-lg md:text-xl text-gray-300 text-center mx-auto max-w-md">
+ " Capture <span className="text-cyan-400">ideas</span>, tasks, and everything worth remembering."
+</h2> */}
+<h2 className="text-lg md:text-xl text-gray-300 text-center whitespace-nowrap">
+  "Capture <span className="text-cyan-400">ideas</span>, tasks, and everything worth remembering "
+</h2>
               </form>
             </div>
           </div>

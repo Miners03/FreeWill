@@ -75,7 +75,7 @@ const NoteDetailPage = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto">
           <div className="flex items-center justify-between mb-6">
-            <Link to="/" className="btn btn-ghost">
+            <Link to="/"  className="btn btn-ghost text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all duration-200 mb-6">
               <ArrowLeftIcon className="h-5 w-5" />
               Back to Notes
             </Link>
@@ -113,7 +113,9 @@ const NoteDetailPage = () => {
               </div>
 
               <div className="card-actions justify-end">
-                <button className="btn btn-primary" disabled={saving} onClick={handleSave}>
+                <button 
+                 className="btn btn-outline text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all duration-200 mb-6"
+                disabled={saving} onClick={handleSave}>
                   {saving ? "Saving..." : "Save Changes"}
                 </button>
               </div>
